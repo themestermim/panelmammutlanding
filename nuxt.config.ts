@@ -10,17 +10,17 @@ export default defineNuxtConfig({
     },
   },
 
-  hooks: {
-    "pages:extend"(pages) {
-      pages.push(
-          {
-            name: "Login",
-            path: "/login",
-            file: "~/pages/login/index.vue",
-          },
-      );
-    },
-  },
+  // hooks: {
+  //   "pages:extend"(pages) {
+  //     pages.push(
+  //         {
+  //           name: "Login",
+  //           path: "/login",
+  //           file: "~/pages/login/index.vue",
+  //         },
+  //     );
+  //   },
+  // },
   srcDir: "./",
 
     modules: [
