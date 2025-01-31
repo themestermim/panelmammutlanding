@@ -27,7 +27,25 @@ export default defineNuxtConfig({
         '@pinia/nuxt',
         '@nuxt/image',
         'nuxt-headlessui',
+        '@nuxtjs/i18n',
     ],
+
+    ssr: true,
+
+    i18n: {
+        vueI18n: './i18n.config.js',
+        locales: [
+            { code: 'fa', iso: 'fa-IR', name: 'فارسی' }
+        ],
+        defaultLocale: 'fa',
+        strategy: 'no_prefix',
+        detectBrowserLanguage: {
+            useCookie: true,
+            cookieKey: 'locale',
+            alwaysRedirect: true,
+            fallbackLocale: 'fa'
+        },
+    },
 
     headlessui: {
         prefix: 'HL'
