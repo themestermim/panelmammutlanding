@@ -28,6 +28,7 @@ export default defineNuxtConfig({
         '@nuxt/image',
         'nuxt-headlessui',
         '@nuxtjs/i18n',
+        'nuxt-swiper',
     ],
 
     ssr: true,

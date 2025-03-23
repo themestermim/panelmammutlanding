@@ -1,3 +1,135 @@
 @tailwind base;
+:root {
+    --theme-black: 23, 25, 31;
+    --theme-white: 255, 255, 255;
+    --theme-error: 216, 14, 14;
+
+    /*gray colors*/
+    --theme-gray-50: 246, 246, 246;
+    --theme-gray-100: 231, 231, 231;
+    --theme-gray-200: 209, 209, 209;
+    --theme-gray-300: 176, 176, 176;
+    --theme-gray-400: 136, 136, 136;
+    --theme-gray-500: 109, 109, 109;
+    --theme-gray-600: 93, 93, 93;
+    --theme-gray-700: 79, 79, 79;
+    --theme-gray-800: 69, 69, 69;
+    --theme-gray-900: 61, 61, 61;
+    --theme-gray-950: 28, 28, 28;
+
+}
+
+body {
+    direction: rtl;
+    @apply cursor-default;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+a {
+    @apply focus:outline-none;
+}
+
 @tailwind components;
+@layer components {
+    .c-btn {
+        @apply rounded-lg flex items-center justify-center px-3 disabled:opacity-30 disabled:pointer-events-none border transition-all;
+
+        &.btn-success-fill {
+            @apply bg-success border-success hover:border-success-700;
+
+            * {
+                @apply text-white;
+            }
+        }
+
+        &.btn-success-outline {
+            @apply bg-white border-success hover:border-success-700 text-success hover:text-success-600;
+        }
+
+        &.btn-success-text {
+            @apply bg-white border-none text-success hover:text-success-600;
+        }
+
+        //&.btn-gray-fill {
+        //    @apply bg-success border-success hover:border-success-700;
+        //
+        //    * {
+        //        @apply text-white;
+        //    }
+        //}
+
+        &.btn-gray-outline {
+            @apply bg-white border-gray-800 hover:border-black text-gray-800 hover:text-black;
+        }
+
+        //&.btn-gray-text {
+        //    @apply bg-white border-none text-success hover:text-success-600;
+        //}
+
+        &.btn-sm {
+            @apply h-10 text-xsm font-normal;
+
+            svg {
+                @apply size-4;
+            }
+
+            i {
+                @apply text-base leading-4;
+            }
+        }
+
+        &.btn-md {
+            @apply h-12 text-sm font-medium;
+
+            svg {
+                @apply size-5;
+            }
+
+            i {
+                @apply text-xl leading-5;
+            }
+        }
+
+        &.btn-lg {
+            @apply h-14 text-base font-medium;
+
+            svg {
+                @apply size-6;
+            }
+
+            i {
+                @apply text-2xl leading-6;
+            }
+        }
+
+        &.btn-full {
+            @apply w-full;
+        }
+
+        span {
+            @apply px-2;
+        }
+    }
+}
+
 @tailwind utilities;
+
+@layer utilities {
+    .text-rtl {
+        direction: rtl;
+    }
+
+    .text-ltr {
+        direction: ltr;
+    }
+}
