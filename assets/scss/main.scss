@@ -8,18 +8,46 @@
     --theme-error: 216, 14, 14;
 
     /*gray colors*/
-    --theme-gray-50: 246, 246, 246;
-    --theme-gray-100: 231, 231, 231;
-    --theme-gray-200: 209, 209, 209;
-    --theme-gray-300: 176, 176, 176;
-    --theme-gray-400: 136, 136, 136;
-    --theme-gray-500: 109, 109, 109;
-    --theme-gray-600: 93, 93, 93;
-    --theme-gray-700: 79, 79, 79;
-    --theme-gray-800: 69, 69, 69;
-    --theme-gray-900: 61, 61, 61;
-    --theme-gray-950: 28, 28, 28;
+    --theme-gray-50: 251, 251, 251;
+    --theme-gray-100: 249, 249, 249;
+    --theme-gray-200: 242, 242, 243;
+    --theme-gray-300: 212, 213, 217;
+    --theme-gray-400: 191, 192, 195;
+    --theme-gray-500: 170, 170, 174;
+    --theme-gray-600: 159, 160, 163;
+    --theme-gray-700: 127, 128, 130;
+    --theme-gray-800: 95, 96, 98;
+    --theme-gray-900: 74, 75, 76;
 
+    /*primary colors*/
+    --theme-primary-50: 230, 231, 236;
+    --theme-primary-100: 176, 182, 196;
+    --theme-primary-200: 138, 146, 168;
+    --theme-primary-300: 84, 97, 128;
+    --theme-primary-400: 51, 66, 104;
+    --theme-primary-500: 0, 19, 66;
+    --theme-primary-600: 0, 17, 60;
+    --theme-primary-700: 0, 13, 47;
+    --theme-primary-800: 0, 10, 36;
+    --theme-primary-900: 0, 8, 28;
+
+    /*secondary colors*/
+    --theme-secondary-50: 249, 231, 231;
+    --theme-secondary-100: 235, 180, 180;
+    --theme-secondary-200: 226, 144, 144;
+    --theme-secondary-300: 212, 94, 94;
+    --theme-secondary-400: 204, 62, 62;
+    --theme-secondary-500: 19, 14, 14;
+    --theme-secondary-600: 174, 13, 13;
+    --theme-secondary-700: 136, 10, 10;
+    --theme-secondary-800: 105, 10, 36;
+    --theme-secondary-900: 0, 8, 8;
+
+    /*success colors*/
+    --theme-success-50: 231, 248, 242;
+    --theme-success-100: 179, 233, 214;
+    --theme-success-200: 142, 223, 194;
+    --theme-success-500: 10, 185, 122;
 }
 
 body {
