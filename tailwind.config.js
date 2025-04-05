@@ -14,7 +14,7 @@ export default {
       padding: '1rem',
     },
     fontFamily: {
-      'yekanbakhfa': '',
+      'yekanbakhfa': 'yekanbakhFa',
     },
     colors: {
       black: 'rgb(var(--theme-black), <alpha-value>)',
