@@ -54,7 +54,7 @@ export default {
                 800: 'rgb(var(--theme-secondary-800), <alpha-value>)',
                 900: 'rgb(var(--theme-secondary-900), <alpha-value>)',
             },
-            secondary: {
+            success: {
                 50: 'rgb(var(--theme-success-50), <alpha-value>)',
                 100: 'rgb(var(--theme-success-100), <alpha-value>)',
                 200: 'rgb(var(--theme-success-200), <alpha-value>)',
