@@ -16,6 +16,19 @@ export default {
         fontFamily: {
             'yekanbakhfa': 'yekanbakhFa',
         },
+        fontSize: {
+            'xs': ['12px', '22px'],
+            'sm': ['14px', '24px'],
+            'base': ['16px', '28px'],
+            'lg': ['18px', '30px'],
+            'xl': ['20px', '34px'],
+            '2xl': ['24px', '40px'],
+            '3xl': ['28px', '46px'],
+            '4xl': ['32px', '52px'],
+            '5xl': ['36px', '58px'],
+            '6xl': ['40px', '66px'],
+            '7xl': ['56px', '90px'],
+          },
         colors: {
             black: 'rgb(var(--theme-black), <alpha-value>)',
             white: 'rgb(var(--theme-white), <alpha-value>)',
