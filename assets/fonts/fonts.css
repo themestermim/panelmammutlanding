@@ -1,6 +1,20 @@
 @font-face {
-    font-family: iranYekanfa;
+    font-family: yekanbakhFa;
     font-style: normal;
-    font-weight: 500;
-    src: url('/fonts/iranyekan/iranyekanfa-medium.woff') format('woff2');
+    font-weight: 400;
+    src: url('/assets/fonts/yekanbakhfa/regular.woff') format('woff2');
+}
+
+@font-face {
+    font-family: yekanbakhFa;
+    font-style: normal;
+    font-weight: 600;
+    src: url('/assets/fonts/yekanbakhfa/semibold.woff') format('woff2');
+}
+
+@font-face {
+    font-family: yekanbakhFa;
+    font-style: normal;
+    font-weight: 700;
+    src: url('/assets/fonts/yekanbakhfa/bold.woff') format('woff2');
 }

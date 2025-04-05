@@ -1,4 +1,7 @@
+@import url('../fonts/fonts.css');
+
 @tailwind base;
+
 :root {
     --theme-black: 23, 25, 31;
     --theme-white: 255, 255, 255;
@@ -40,6 +43,7 @@ a {
 }
 
 @tailwind components;
+
 @layer components {
     .c-btn {
         @apply rounded-lg flex items-center justify-center px-3 disabled:opacity-30 disabled:pointer-events-none border transition-all;

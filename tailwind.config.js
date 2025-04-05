@@ -13,6 +13,9 @@ export default {
       center: true,
       padding: '1rem',
     },
+    fontFamily: {
+      'yekanbakhfa': '',
+    },
     colors: {
       black: 'rgb(var(--theme-black), <alpha-value>)',
       white: 'rgb(var(--theme-white), <alpha-value>)',
