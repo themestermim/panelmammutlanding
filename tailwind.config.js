@@ -90,6 +90,9 @@ export default {
                 '88': '22rem',
             },
         },
+        zIndex: {
+            '1': '1',
+          },
     },
     plugins: [
         require('@tailwindcss/forms'),
