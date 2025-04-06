@@ -2,19 +2,19 @@
     font-family: yekanbakhFa;
     font-style: normal;
     font-weight: 400;
-    src: url('/assets/fonts/yekanbakhfa/regular.woff') format('woff2');
+    src: url('/assets/fonts/yekanbakhfa/regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: yekanbakhFa;
     font-style: normal;
     font-weight: 600;
-    src: url('/assets/fonts/yekanbakhfa/semibold.woff') format('woff2');
+    src: url('/assets/fonts/yekanbakhfa/semibold.woff2') format('woff2');
 }
 
 @font-face {
     font-family: yekanbakhFa;
     font-style: normal;
     font-weight: 700;
-    src: url('/assets/fonts/yekanbakhfa/bold.woff') format('woff2');
+    src: url('/assets/fonts/yekanbakhfa/bold.woff2') format('woff2');
 }
