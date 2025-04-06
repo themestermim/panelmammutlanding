@@ -87,6 +87,8 @@ export default {
             spacing: {
                 '30': '7.5rem',
                 '46': '11.5rem',
+                '110': '27.6rem',
+                '120': '30rem',
             },
         },
     },
