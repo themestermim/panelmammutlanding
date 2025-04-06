@@ -52,7 +52,7 @@
 
 body {
     direction: rtl;
-    @apply cursor-default;
+    @apply cursor-default font-yekanbakhfa bg-primary-900;
 }
 
 input::-webkit-outer-spin-button,
