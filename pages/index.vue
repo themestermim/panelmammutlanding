@@ -1,5 +1,6 @@
 <template>
     <div class="text-white">
+        <Svg />
         <Hero />
         <ProductDetailsWithOrder />
         <ProductSoftware />
@@ -18,6 +19,7 @@ import ContactPanel from "~/components/Home/ContactPanel";
 import ProductOverview from "~/components/Home/ProductOverview";
 import PricePanel from "~/components/Home/PricePanel";
 import Faq from "~/components/Home/Faq";
+import Svg from "~/components/Home/Svg";
 
 defineOptions({
     name: "Homapage",
