@@ -5,7 +5,7 @@
         <div class="container grid grid-cols-2 h-14">
             <!-- logo -->
              <div class="flex items-center justify-end h-full">
-                <NuxtImg src="" />
+                <NuxtImg src="/assets/icons/shared/logo.png" alt="ماموت ساختمان" />
              </div>
         </div>
     </header>
