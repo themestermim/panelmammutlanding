@@ -1,5 +1,5 @@
 <template>
-    <div class="container grid grid-cols-1 gap-4 py-6 lg:grid-cols-2 lg:gap-6">
+    <div class="container grid grid-cols-1 gap-4 py-6 lg:grid-cols-2 lg:gap-6 lg:pt-24">
         <div class="lg:order-2 lg:flex lg:flex-col lg:justify-between">
             <div>
                 <h2 class="text-base mb-4">

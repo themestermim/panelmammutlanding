@@ -1,5 +1,5 @@
 <template>
-    <div class="relative">
+    <div class="relative lg:pt-24">
         <svg class="hidden absolute w-[364px] h-[661px] lg:block">
             <use href="#galaxy" />
         </svg>

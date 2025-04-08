@@ -14,7 +14,7 @@
                     </div>
 
                 </div>
-                <div class="ml-16">
+                <div class="lg:ml-16">
                     <p class="text-primary-300 text-xs">
                         شرکت ماموت با در اختیار داشتن نیروهای مجرب و متعهد و با تکیه برداشتن دانش فنی بالا توانسته
                         گام‌های
@@ -22,7 +22,7 @@
                         پیشتـازان ساخت ساندویچ پانل و سازه‌های سبک در ایران وخـاورمیانه باشد.
                     </p>
                 </div>
-                <div class="flex flex-row justify-between mt-[30px] lg:flex-none lg:ml-8 lg:mt-0 lg:flex-col lg:gap-5 lg:items-start lg:py-7">
+                <div class="flex flex-row justify-between mt-[30px] lg:flex-none lg:ml-8 lg:mt-0 lg:flex-col lg:gap-5 lg:items-start lg:py-6">
                     <a class="py-2 px-6 bg-primary-50 text-xs rounded-3xl text-primary-500 font-semibold order-2 lg:order-1">
                         تماس با ما
                     </a>
@@ -37,8 +37,8 @@
                     </span>
                     </a>
                 </div>
-                <div class="mt-[18px] lg:mt-0 lg:relative lg:h-40 lg:w-56 lg:flex-none lg:ml-16">
-                    <img class="h-full lg:absolute lg:h-[179px] lg:w-auto lg:bottom-0" src="/assets/img/home/contactus.webp" />
+                <div class="mt-[18px] lg:mt-0 lg:relative lg:h-36 lg:w-56 lg:flex-none lg:ml-16">
+                    <img class="h-full lg:absolute lg:h-[169px] lg:w-auto lg:bottom-[-1px]" src="/assets/img/home/contactus.webp" />
                 </div>
             </div>
         </div>
