@@ -30,9 +30,12 @@
                 </Swiper>
             </div>
 
-            <div class="flex flex-col gap-4 mt-8">
-                <button type="button" role="button" class="c-btn btn-danger-fill">
+            <div class="flex flex-col gap-4 mt-8 sm:flex-row sm:justify-center sm:mt-10">
+                <button type="button" role="button" class="c-btn btn-danger-fill btn-md w-full sm:w-auto">
                     <span> استعلام قیمت </span>
+                </button>
+                <button type="button" role="button" class="c-btn btn-secondary-fill btn-md w-full sm:w-auto">
+                    <span> مشاهده بیشتر </span>
                 </button>
             </div>
         </div>

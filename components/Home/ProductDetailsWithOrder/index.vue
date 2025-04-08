@@ -1,5 +1,5 @@
 <template>
-    <div class="container grid grid-cols-1 gap-4 py-6 lg:grid-cols-2 lg:gap-6 lg:pt-24">
+    <div class="c-padding container grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-6">
         <div class="lg:order-2 lg:flex lg:flex-col lg:justify-between">
             <div>
                 <h2 class="text-base mb-4">
@@ -24,8 +24,8 @@
                     سفارش</button>
             </div>
         </div>
-        <div class="max-h-80 px-4">
-            <video class="w-full h-full" controls>
+        <div class="aspect-video px-4">
+            <video class="size-full" controls>
                 <source src="/assets/video/home/video_mammut.mp4" type="video/mp4">
             </video>
         </div>
