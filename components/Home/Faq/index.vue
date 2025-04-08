@@ -12,15 +12,27 @@
                     تلاش
                     هستیم تا تجربه‌ای مثبت و بدون دغدغه را برای شما فراهم کنیم.</p>
                 <form action="#" class="grid grid-cols-1 gap-4 lg:grid-cols-2">
+                    <div class="text-sm text-right w-full font-normal h-14 rounded-2xl text-gray-500 bg-transparent border border-gray-500 relative flex flex-row items-center gap-4 px-3">
+                        <svg class="h-5 w-5">
+                            <use href="#user"/>
+                        </svg>
                     <input
-                        class="text-sm text-right w-full font-normal h-14 rounded-2xl text-gray-500 bg-transparent border border-gray-500 before:content-['*'] before:bg-[url('/assets/img/home/user.webp')] before:bg-no-repeat before:bg-contain before:bg-right before:mr-2 before:w-4 before:h-4"
+                        class="text-sm text-right w-full font-normal h-full text-gray-500 bg-transparent border-none p-0"
                         type="text" placeholder="نام و نام خانوادگی">
-                    <input
-                        class="text-sm text-right w-full font-normal h-14 rounded-2xl text-gray-500 bg-transparent border border-gray-500"
-                        type="tel" placeholder="شماره تماس ">
-                    <textarea
-                        class="col-span-2 text-sm text-right w-full font-normal py-3.5 px-3.5 rounded-2xl text-gray-500 h-[150px] bg-transparent border border-gray-500"
+                    </div>
+                    <div class="text-sm text-right w-full font-normal h-14 rounded-2xl text-gray-500 bg-transparent border border-gray-500 relative flex flex-row items-center gap-4 px-3">
+                        <svg class="h-5 w-5">
+                            <use href="#call"/>
+                        </svg>
+                        <input
+                        class="text-sm text-right w-full font-normal h-full text-gray-500 bg-transparent border-none p-0"
+                        type="text" placeholder="شماره تماس">
+                    </div>
+                   <div class="lg:col-span-2 h-[150px] border border-gray-500 rounded-2xl">
+                    <textarea 
+                        class="text-sm text-right w-full font-normal py-3.5 px-3.5 text-gray-500 h-full bg-transparent border-none"
                         name="" placeholder="عنوان"></textarea>
+                   </div>
                 </form>
                 <div class="mt-7 flex flex-col gap-4 lg:mt-10 lg:flex-row lg:gap-8 lg:justify-end">
                         <a href="tel:12345" class="c-btn btn-danger-fill">
