@@ -29,6 +29,12 @@
                     </SwiperSlide>
                 </Swiper>
             </div>
+
+            <div class="flex flex-col gap-4 mt-8">
+                <button type="button" role="button" class="c-btn btn-danger-fill">
+                    <span> استعلام قیمت </span>
+                </button>
+            </div>
         </div>
 
         <!-- left squares -->

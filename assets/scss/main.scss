@@ -74,54 +74,33 @@ a {
 
 @layer components {
     .c-btn {
-        @apply rounded-lg flex items-center justify-center px-3 disabled:opacity-30 disabled:pointer-events-none border-none transition-all;
+        @apply flex items-center justify-center gap-2 h-10 px-4 disabled:opacity-30 disabled:pointer-events-none border-none transition-all;
       
         &.btn-danger-fill {
-            @apply px-6	py-2.5 bg-secondary-500 rounded-3xl;
+            @apply bg-secondary-500;
 
             * {
-                @apply text-white text-xs;
+                @apply text-white;
             }
         }
         &.btn-secondary-fill {
-            @apply py-2 px-8 bg-primary-50 text-xs rounded-3xl;
+            @apply bg-primary-50;
 
             * {
-                @apply  text-primary-500 text-xs;
+                @apply  text-primary-500;
             }
         }
-        &.btn-danger-fill {
+        // &.btn-sm {
         
-        }
-
-
-
-        //&.btn-gray-fill {
-        //    @apply bg-success border-success hover:border-success-700;
-        //
-        //    * {
-        //        @apply text-white;
-        //    }
-        //}
-
-        &.btn-gray-outline {
-        }
-
-        //&.btn-gray-text {
-        //    @apply bg-white border-none text-success hover:text-success-600;
-        //}
-
-        &.btn-sm {
-        
-        }
+        // }
 
         &.btn-md {
-         
+         @apply rounded-3xl text-xs h-10;
         }
 
-        &.btn-lg {
+        // &.btn-lg {
          
-        }
+        // }
 
         &.btn-full {
             @apply w-full;
