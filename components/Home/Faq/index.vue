@@ -35,12 +35,12 @@
                    </div>
                 </form>
                 <div class="mt-7 flex flex-col gap-4 lg:mt-10 lg:flex-row lg:gap-8 lg:justify-end">
-                        <a href="tel:12345" class="c-btn btn-danger-fill">
+                        <a href="tel:12345" class="c-btn btn-danger-fill btn-md">
                             <span>
                                 تماس با ما
                             </span>
                         </a>
-                        <button class="c-btn btn-secondary-fill">
+                        <button class="c-btn btn-secondary-fill btn-md">
                             <span>
                                 ارسال پیام
                             </span>

@@ -17,10 +17,10 @@
             </div>
             <div class="cta-buttons flex gap-8 justify-end">
                 <button
-                    class="hidden lg:inline-block text-xs text-primary-500 bg-gray-50 rounded-3xl px-6 py-2.5 font-semibold">خرید
+                    class="c-btn btn-md btn-secondary-fill">خرید
                     اقساطی</button>
                 <button
-                    class="hidden lg:inline-block text-xs text-white bg-secondary-500 rounded-3xl px-6 py-2.5 font-semibold">ثبت
+                    class="c-btn btn-md btn-danger-fill">ثبت
                     سفارش</button>
             </div>
         </div>
