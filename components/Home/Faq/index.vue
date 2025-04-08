@@ -11,17 +11,18 @@
                     نکردید، لطفاً با تیم پشتیبانی ما تماس بگیرید یا از طریق تکمیل فرم ذیل با ما در ارتباط باشید . ما در
                     تلاش
                     هستیم تا تجربه‌ای مثبت و بدون دغدغه را برای شما فراهم کنیم.</p>
-                <form action="#" class="flex flex-col gap-4">
+                <form action="#" class="grid grid-cols-1 gap-4 lg:grid-cols-2">
                     <input
-                        class="text-sm text-right w-full font-normal h-14 rounded-2xl text-gray-500 bg-transparent border border-gray-500"
+                        class="text-sm text-right w-full font-normal h-14 rounded-2xl text-gray-500 bg-transparent border border-gray-500 before:content-['*'] before:bg-[url('/assets/img/home/user.webp')] before:bg-no-repeat before:bg-contain before:bg-right before:mr-2 before:w-4 before:h-4"
                         type="text" placeholder="نام و نام خانوادگی">
                     <input
                         class="text-sm text-right w-full font-normal h-14 rounded-2xl text-gray-500 bg-transparent border border-gray-500"
                         type="tel" placeholder="شماره تماس ">
                     <textarea
-                        class="text-sm text-right w-full font-normal py-3.5 px-3.5 rounded-2xl text-gray-500 h-[150px] bg-transparent border border-gray-500"
+                        class="col-span-2 text-sm text-right w-full font-normal py-3.5 px-3.5 rounded-2xl text-gray-500 h-[150px] bg-transparent border border-gray-500"
                         name="" placeholder="عنوان"></textarea>
-                    <div class="mt-7 flex flex-col gap-4 lg:mt-10 lg:flex-row lg:gap-8 lg:justify-end">
+                </form>
+                <div class="mt-7 flex flex-col gap-4 lg:mt-10 lg:flex-row lg:gap-8 lg:justify-end">
                         <a href="tel:12345" class="c-btn btn-danger-fill">
                             <span>
                                 تماس با ما
@@ -33,7 +34,6 @@
                             </span>
                         </button>
                     </div>
-                </form>
             </div>
             <div class="flex-1">
                 <ul class="flex flex-col gap-4">
@@ -41,7 +41,7 @@
                         <h3 class="text-sm font-normal text-gray-100 flex items-center justify-between">
                             ساندویچ پانل ها در چه بخش هایی کاربرد دارند؟
                             <svg class="w-3 h-0.5">
-                                <use href="#minimize" />
+                                <use href="#minus" />
                             </svg>
                         </h3>
                         <p class="text-xs text-primary-50">
