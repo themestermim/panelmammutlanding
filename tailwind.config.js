@@ -109,6 +109,7 @@ export default {
                 'slide-1-left-square-start-lg': 'slide_1_left_square_start_lg 2000ms',
                 // description
                 'slide-1-description-start': 'slide_1_description_start 2000ms',
+                'slide-1-description-start-lg': 'slide_1_description_start_lg 2000ms',
                 // end slide 1
                 'slide-1-title-end': 'slide_1_title_end 2000ms',
                 'slide-1-title-end-lg': 'slide_1_title_end_lg 2000ms',
@@ -133,6 +134,7 @@ export default {
                 'slide-1-left-square-end-lg': 'slide_1_left_square_end_lg 2000ms',
                 // description
                 'slide-1-description-end': 'slide_1_description_end 2000ms',
+                'slide-1-description-end-lg': 'slide_1_description_end_lg 2000ms',
                 // slide 1 finished.
 
 
@@ -160,6 +162,7 @@ export default {
                 // 'slide-1-left-square-start-lg': 'slide_1_left_square_start_lg 2000ms',
                 // description
                 'slide-2-description-start': 'slide_2_description_start 2000ms',
+                'slide-2-description-start-lg': 'slide_2_description_start_lg 2000ms',
                 // end slide 1
                 'slide-2-title-end': 'slide_2_title_end 2000ms',
                 'slide-2-title-end-lg': 'slide_2_title_end_lg 2000ms',
@@ -184,6 +187,7 @@ export default {
                 'slide-2-left-square-end-lg': 'slide_2_left_square_end_lg 2000ms',
                 // description
                 'slide-2-description-end': 'slide_2_description_end 2000ms',
+                'slide-2-description-end-lg': 'slide_2_description_end_lg 2000ms',
             },
             keyframes: {
                 // start slide 1
@@ -342,6 +346,16 @@ export default {
                     '0%': {
                         opacity: '0',
                         transform: 'translateY(100px)',
+                    },
+                    '100%': {
+                        opacity: '1',
+                        transform: 'translateY(0px)',
+                    },
+                },
+                slide_1_description_start_lg: {
+                    '0%': {
+                        opacity: '0',
+                        transform: 'translateY(160px)',
                     },
                     '100%': {
                         opacity: '1',
@@ -510,6 +524,16 @@ export default {
                         transform: 'translateY(100px)',
                     },
                 },
+                slide_1_description_end_lg: {
+                    '0%': {
+                        opacity: '1',
+                        transform: 'translateY(0px)',
+                    },
+                    '100%': {
+                        opacity: '0',
+                        transform: 'translateY(160px)',
+                    },
+                },
                 // slide 1 finished
 
                 // start slide 1
@@ -639,7 +663,7 @@ export default {
                 slide_2_left_text_start_lg: {
                     '0%': {
                         opacity: '0.25',
-                        transform: 'translate(-163px, 165px)',
+                        transform: 'translate(-227px, 292px)',
                     },
                     '100%': {
                         opacity: '1',
@@ -668,6 +692,16 @@ export default {
                     '0%': {
                         opacity: '0',
                         transform: 'translateY(100px)',
+                    },
+                    '100%': {
+                        opacity: '1',
+                        transform: 'translateY(0px)',
+                    },
+                },
+                slide_2_description_start_lg: {
+                    '0%': {
+                        opacity: '0',
+                        transform: 'translateY(160px)',
                     },
                     '100%': {
                         opacity: '1',
@@ -805,7 +839,7 @@ export default {
                     },
                     '100%': {
                         opacity: '0.25',
-                        transform: 'translate(-163px, 165px)',
+                        transform: 'translate(-227px, 292px)',
                     },
                 },
                 // text left square
@@ -835,10 +869,21 @@ export default {
                         opacity: '0',
                         transform: 'translateY(100px)',
                     },
+                },
+                slide_2_description_end_lg: {
+                    '0%': {
+                        opacity: '1',
+                        transform: 'translateY(0px)',
+                    },
+                    '100%': {
+                        opacity: '0',
+                        transform: 'translateY(160px)',
+                    },
                 }
             },
             blur: {
                 '4xl': '80px',
+                '5xl': '96px',
             },
             spacing: {
                 '30': '7.5rem',

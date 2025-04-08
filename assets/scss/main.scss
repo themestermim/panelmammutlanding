@@ -257,6 +257,11 @@ a {
     }
     .hs-description {
         @apply animate-slide-1-description-start ease-slide;
+
+        @screen lg {
+            @apply animate-none;
+            @apply animate-slide-1-description-start-lg ease-slide;
+        }
     }
 }
 
@@ -323,6 +328,11 @@ a {
     }
     .hs-description {
         @apply animate-slide-1-description-end ease-slide;
+
+        @screen lg {
+            @apply animate-none;
+            @apply animate-slide-1-description-end-lg ease-slide;
+        }
     }
 }
 
@@ -389,6 +399,11 @@ a {
     }
     .hs-description {
         @apply animate-slide-2-description-start ease-slide;
+
+        @screen lg {
+            @apply animate-none;
+            @apply animate-slide-2-description-start-lg ease-slide;
+        }
     }
 }
 
@@ -455,5 +470,10 @@ a {
     }
     .hs-description {
         @apply animate-slide-2-description-end ease-slide;
+
+        @screen lg {
+            @apply animate-none;
+            @apply animate-slide-2-description-end-lg ease-slide;
+        }
     }
 }
