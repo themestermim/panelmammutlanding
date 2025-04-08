@@ -15,13 +15,19 @@
                     بگیرد.
                 </p>
             </div>
-            <div class="cta-buttons flex gap-8 justify-end">
-                <button
-                    class="c-btn btn-md btn-secondary-fill">خرید
-                    اقساطی</button>
-                <button
-                    class="c-btn btn-md btn-danger-fill">ثبت
-                    سفارش</button>
+            <div class="cta-buttons flex flex-col gap-4 justify-end lg:flex-row lg:gap-8">
+                <button class="c-btn btn-md btn-secondary-fill order-2 lg:order-1">
+                    <span>
+                        خرید
+                        اقساطی
+                    </span>
+                </button>
+                <button class="c-btn btn-md btn-danger-fill">
+                    <span>
+                        ثبت
+                        سفارش </span>
+
+                </button>
             </div>
         </div>
         <div class="aspect-video px-4">
