@@ -28,7 +28,7 @@ export default {
             '5xl': ['36px', '58px'],
             '6xl': ['40px', '66px'],
             '7xl': ['56px', '90px'],
-          },
+        },
         colors: {
             black: 'rgb(var(--theme-black), <alpha-value>)',
             white: 'rgb(var(--theme-white), <alpha-value>)',
@@ -908,10 +908,10 @@ export default {
                 // 'slide': 'cubic-bezier(0.245, 0.695, 0.485, 0.855)',
                 'slide': 'cubic-bezier(0.25, 1, 0.25, 1)',
             },
+            zIndex: {
+                '1': '1',
+            },
         },
-        zIndex: {
-            '1': '1',
-          },
     },
     plugins: [
         require('@tailwindcss/forms'),

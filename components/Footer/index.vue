@@ -1,7 +1,7 @@
 <template>
 <footer class="text-white">
 <div class="container">
-<img src="/assets/img/home/logo_mc.svg" alt="ماموت ساختمان">
+<!-- <img src="/assets/img/home/logo_mc.svg" alt="ماموت ساختمان"> -->
 </div>
 <div>
     <ul>
