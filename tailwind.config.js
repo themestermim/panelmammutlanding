@@ -909,6 +909,9 @@ export default {
                 'slide': 'cubic-bezier(0.25, 1, 0.25, 1)',
             },
         },
+        zIndex: {
+            '1': '1',
+          },
     },
     plugins: [
         require('@tailwindcss/forms'),

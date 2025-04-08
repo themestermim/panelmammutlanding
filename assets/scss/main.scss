@@ -37,7 +37,7 @@
     --theme-secondary-200: 226, 144, 144;
     --theme-secondary-300: 212, 94, 94;
     --theme-secondary-400: 204, 62, 62;
-    --theme-secondary-500: 19, 14, 14;
+    --theme-secondary-500: 191, 14, 14;
     --theme-secondary-600: 174, 13, 13;
     --theme-secondary-700: 136, 10, 10;
     --theme-secondary-800: 105, 10, 36;
@@ -74,23 +74,27 @@ a {
 
 @layer components {
     .c-btn {
-        @apply rounded-lg flex items-center justify-center px-3 disabled:opacity-30 disabled:pointer-events-none border transition-all;
-
-        &.btn-success-fill {
-            @apply bg-success border-success hover:border-success-700;
+        @apply rounded-lg flex items-center justify-center px-3 disabled:opacity-30 disabled:pointer-events-none border-none transition-all;
+      
+        &.btn-danger-fill {
+            @apply px-6	py-2.5 bg-secondary-500 rounded-3xl;
 
             * {
-                @apply text-white;
+                @apply text-white text-xs;
             }
         }
+        &.btn-secondary-fill {
+            @apply py-2 px-8 bg-primary-50 text-xs rounded-3xl;
 
-        &.btn-success-outline {
-            @apply bg-white border-success hover:border-success-700 text-success hover:text-success-600;
+            * {
+                @apply  text-primary-500 text-xs;
+            }
+        }
+        &.btn-danger-fill {
+        
         }
 
-        &.btn-success-text {
-            @apply bg-white border-none text-success hover:text-success-600;
-        }
+
 
         //&.btn-gray-fill {
         //    @apply bg-success border-success hover:border-success-700;
@@ -101,7 +105,6 @@ a {
         //}
 
         &.btn-gray-outline {
-            @apply bg-white border-gray-800 hover:border-black text-gray-800 hover:text-black;
         }
 
         //&.btn-gray-text {
@@ -109,39 +112,15 @@ a {
         //}
 
         &.btn-sm {
-            @apply h-10 text-xsm font-normal;
-
-            svg {
-                @apply size-4;
-            }
-
-            i {
-                @apply text-base leading-4;
-            }
+        
         }
 
         &.btn-md {
-            @apply h-12 text-sm font-medium;
-
-            svg {
-                @apply size-5;
-            }
-
-            i {
-                @apply text-xl leading-5;
-            }
+         
         }
 
         &.btn-lg {
-            @apply h-14 text-base font-medium;
-
-            svg {
-                @apply size-6;
-            }
-
-            i {
-                @apply text-2xl leading-6;
-            }
+         
         }
 
         &.btn-full {
