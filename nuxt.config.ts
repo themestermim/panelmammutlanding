@@ -52,11 +52,17 @@ export default defineNuxtConfig({
         prefix: 'HL'
     },
 
-    // runtimeConfig: {
-    //     public: {
-    //         apiBase: 'https://panel.paye1.com/api',
-    //     }
-    // },
+    runtimeConfig: {
+        // public: {
+        //     apiBase: 'https://panel.paye1.com/api',
+        // }
+        private: {
+            gmailAppPassword: "hang hyog tlwe zhwx",
+            gmailMailTo: "themestermim@gmail.com",
+        }
+    },
 
-    plugins: []
+    plugins: [
+        {src: './plugins/vue3-toastify.ts'},
+    ],
 })

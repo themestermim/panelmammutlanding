@@ -65,11 +65,11 @@
         </symbol>
 
         <symbol id="minus" viewBox="0 0 12 2" fill="none">
-            <path d="M12 -0.000244141H0V1.99977H12V-0.000244141Z" fill="#E6E7EC" />
+            <path d="M12 -0.000244141H0V1.99977H12V-0.000244141Z" fill="currentColor" />
         </symbol>
 
         <symbol id="plus" viewBox="0 0 12 12" fill="none">
-            <path d="M7 5V0H5V5H0V7H5V12H7V7H12V5H7Z" fill="#E6E7EC" />
+            <path d="M7 5V0H5V5H0V7H5V12H7V7H12V5H7Z" fill="currentColor" />
         </symbol>
 
         <symbol id="telegram" viewBox="0 0 21 20" fill="none">
