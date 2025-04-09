@@ -77,18 +77,18 @@ a {
         @apply flex items-center justify-center gap-2 px-4 disabled:opacity-30 disabled:pointer-events-none border-none transition-all;
       
         &.btn-danger-fill {
-            @apply bg-secondary-500;
+            @apply bg-secondary-500 text-white hover:bg-secondary-700 hover:text-secondary-50;
 
-            * {
-                @apply text-white;
-            }
+            //* {
+            //    @apply text-white;
+            //}
         }
         &.btn-secondary-fill {
-            @apply bg-primary-50;
+            @apply bg-primary-50 text-primary-500 hover:bg-primary-200 hover:text-primary-50;
 
-            * {
-                @apply  text-primary-500;
-            }
+            //* {
+            //    @apply  text-primary-500;
+            //}
         }
         // &.btn-sm {
         
@@ -112,7 +112,17 @@ a {
     }
 
     .c-padding {
-        @apply py-4 sm:py-6 lg:py-10;
+        @apply py-6 lg:py-10;
+    }
+
+    .scrollbar-hidden {
+        &::-webkit-scrollbar {
+            @apply w-0;
+        }
+
+        //&::-webkit-scrollbar-track {
+        //    @apply w-0;
+        //}
     }
 }
 

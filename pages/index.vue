@@ -1,5 +1,5 @@
 <template>
-    <div class="text-white">
+    <div class="text-white w-full overflow-hidden">
         <Svg />
         <Hero />
         <ProductDetailsWithOrder />
