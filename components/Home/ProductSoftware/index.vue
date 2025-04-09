@@ -21,7 +21,7 @@
                 </button>
             </div>
             <div>
-                <img class="w-full" src="/public/assets/img/home/product-software.webp" alt="">
+                <NuxtImg class="w-full" src="/assets/img/home/product-software.webp" alt="نرم افزار طراحی سوله" />
             </div>
         </div>
     </div>
