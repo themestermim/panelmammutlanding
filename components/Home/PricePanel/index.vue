@@ -1,7 +1,7 @@
 <template>
     <div
         class="bg-[url('/assets/img/home/horizontal-pattern.webp')] lg:bg-[url('/assets/img/home/vertical-pattern.webp')] bg-no-repeat bg-left lg:bg-center bg-contain">
-        <div class="container py-10 lg:py-20">
+        <div class="container c-padding">
             <div
                 class="flex flex-col bg-white p-4 pb-0 rounded-[50px] gap-4 lg:flex-row lg:px-8 lg:py-0 lg:items-center lg:relative lg:gap-0 lg:before:content-[''] lg:before:absolute lg:before:h-40 lg:before:left-0 lg:before:right-0 lg:before:bg-white lg:before:rounded-[50%] lg:before:opacity-50 lg:before:blur-xl lg:before:z-[-1] lg:h-36 ">
                 <div class="flex gap-3 justify-center lg:flex-col lg:gap-4 lg:flex-none">
