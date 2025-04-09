@@ -124,6 +124,30 @@ a {
         //    @apply w-0;
         //}
     }
+
+    .c-input-parent {
+        @apply w-full h-14 rounded-2xl text-gray-500 border border-gray-500 relative flex flex-row items-center gap-4 px-3 transition-all focus-within:border-gray-700;
+
+        &.has-error {
+            @apply border-secondary-400;
+        }
+
+        &.has-textarea {
+            @apply h-36;
+        }
+
+        .icon {
+            @apply size-5;
+        }
+
+        .input {
+            @apply text-sm size-full font-normal bg-transparent border-0 p-0 focus:outline-none focus:ring-0;
+        }
+
+        .textarea {
+            @apply text-sm p-3.5 size-full font-normal bg-transparent border-0 resize-none focus:outline-none focus:ring-0;
+        }
+    }
 }
 
 @tailwind utilities;
