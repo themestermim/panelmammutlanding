@@ -10,6 +10,10 @@ export default defineNuxtConfig({
         },
     },
 
+    app: {
+        baseURL: '/',
+    },
+
     // hooks: {
     //   "pages:extend"(pages) {
     //     pages.push(
