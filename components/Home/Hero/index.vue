@@ -2,7 +2,8 @@
     <div class="relative lg:overflow-hidden">
         <!-- right squares -->
         <Transition name="fade">
-            <div v-if="activeSlideIndex != null"
+<!--            v-if="activeSlideIndex != null"-->
+            <div
                 :class="{
                     'hidden lg:block absolute transition-all duration-2000 ease-slide size-46 border border-gray-500 before:content-[\'\'] before:absolute before:size-46 before:right-0 before:top-0 before:border before:border-gray-900 before:-rotate-[18deg]': true,
                     'top-20 -right-10 -rotate-[31deg]': activeSlideIndex % 2 == 1,
@@ -44,7 +45,8 @@
 
         <!-- left squares -->
         <Transition name="fade">
-            <div v-if="activeSlideIndex != null"
+<!--            v-if="activeSlideIndex != null"-->
+            <div
                 :class="{
                     'hidden lg:block absolute transition-all duration-2000 ease-slide -left-10 size-46 border border-gray-500 before:content-[\'\'] before:absolute before:size-46 before:right-0 before:top-0 before:border before:border-gray-900 before:-rotate-[18deg]': true,
                     'top-10 -rotate-[31deg]': activeSlideIndex % 2 == 0,
