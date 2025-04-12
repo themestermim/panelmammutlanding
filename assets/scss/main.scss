@@ -178,7 +178,7 @@ a {
         }
     }
     .swiper-pagination {
-        @apply top-12 sm:top-36 md:top-40 lg:top-64 xl:top-88 right-0 w-full left-auto #{!important};
+        @apply bottom-auto top-56 sm:top-64 md:top-68 lg:top-96 xl:top-116 right-0 w-full left-auto #{!important};
         @apply flex justify-center items-center gap-2;
 
         .swiper-pagination-bullet {

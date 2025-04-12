@@ -72,7 +72,10 @@ const settings = {
     // direction: 'vertical',
     effect: 'fade',
     loop: true,
-    // allowTouchMove: false,
+    allowTouchMove: false,
+    // allowSlideNext: false,
+    // allowSlidePrev: false,
+    // followFinger: false,
     speed: 2000,
     autoplay: {
         delay: 3000,

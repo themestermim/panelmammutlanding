@@ -5,7 +5,7 @@
             ساندویچ پانل سقفی</h2>
         <div class="w-44 h-30 sm:w-56 sm:h-36 lg:w-88 lg:h-60 xl:w-116 xl:h-76 mt-4 sm:mt-6 lg:mt-4 mx-auto relative">
             <div class="hs-image w-44 h-30 sm:w-56 sm:h-36 lg:w-88 lg:h-60 xl:w-116 xl:h-76">
-                <NuxtImg src="/assets/img/home/roof-panel.webp" class="size-full object-contain"
+                <NuxtImg src="/assets/img/home/roof-panel.webp" class="size-full object-contain" preload
                     alt="ساندویچ پانل سقفی" />
             </div>
             <!-- right text -->
