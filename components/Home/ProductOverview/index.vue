@@ -6,7 +6,7 @@
             <HLTabList as="div" class="flex max-w-max border-b border-primary-400 mb-4 lg:mb-8">
                 <HLTab v-slot="{ selected }" as="template">
                     <button :class="{
-                        'py-2 px-4 rounded-t-2xl text-xs ml-4 transition-all outline-0 lg:text-sm': true,
+                        'py-2 px-4 rounded-t-2xl text-xs ml-4 transition-all outline-0 lg:text-sm focus:outline-none': true,
                         'bg-white shadow-md text-primary-500': selected,
                         'text-primary-300': !selected
                     }">
@@ -15,7 +15,7 @@
                 </HLTab>
                 <HLTab v-slot="{ selected }" as="template">
                     <button :class="{
-                        'py-2 px-4 rounded-t-2xl text-xs transition-all outline-0 lg:text-sm': true,
+                        'py-2 px-4 rounded-t-2xl text-xs transition-all outline-0 lg:text-sm focus:outline-none': true,
                         'bg-white shadow-md text-primary-500': selected,
                         'text-primary-300': !selected
                     }">

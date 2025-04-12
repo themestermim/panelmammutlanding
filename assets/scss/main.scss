@@ -78,7 +78,7 @@ a {
         @apply flex items-center justify-center gap-2 px-4 disabled:opacity-30 disabled:pointer-events-none border-none transition-all;
       
         &.btn-danger-fill {
-            @apply bg-secondary-500 text-white hover:bg-secondary-700 hover:text-secondary-50;
+            @apply bg-secondary-500 text-white hover:bg-secondary-700 hover:text-secondary-50 relative hover:before:opacity-0 before:absolute before:content-[''] before:h-12 before:w-56 before:rounded-full before:bg-secondary-500 before:-top-1 before:right-1/2 before:translate-x-1/2 before:blur-4xl md:before:w-28 md:before:h-14 md:before:-top-2 md:before:blur-3xl;
 
             //* {
             //    @apply text-white;
@@ -178,7 +178,7 @@ a {
         }
     }
     .swiper-pagination {
-        @apply top-54 sm:top-64 md:top-68 lg:top-96 xl:top-116 right-0 w-full left-auto #{!important};
+        @apply top-12 sm:top-36 md:top-40 lg:top-64 xl:top-88 right-0 w-full left-auto #{!important};
         @apply flex justify-center items-center gap-2;
 
         .swiper-pagination-bullet {

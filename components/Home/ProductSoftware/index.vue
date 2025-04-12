@@ -6,7 +6,7 @@
         </svg>
         <div class="container grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-4 lg:gap-6 md:items-center">
             <div
-                class="relative z-1 before:content-[''] before:bottom-0 before:absolute before:w-32 before:h-9 before:bg-white before:blur-3xl before:right-0">
+                class="relative before:content-[''] before:bottom-0 before:absolute before:w-32 before:h-9 before:bg-white before:blur-3xl before:right-0">
                 <h2 class="text-base mb-2 lg:mb-1">
                     نرم افزار طراحی سوله
                 </h2>
@@ -22,7 +22,7 @@
                 </button>
             </div>
             <div>
-                <NuxtImg class="w-full" src="/assets/img/home/product-software.webp" alt="نرم افزار طراحی سوله" />
+                <NuxtImg class="w-full h-auto" src="/assets/img/home/product-software.webp" alt="نرم افزار طراحی سوله" />
             </div>
         </div>
     </div>

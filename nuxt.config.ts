@@ -33,6 +33,7 @@ export default defineNuxtConfig({
         'nuxt-headlessui',
         // '@nuxtjs/i18n',
         'nuxt-swiper',
+        '@nuxtjs/device',
     ],
 
     ssr: true,

@@ -30,7 +30,7 @@
                     </button>
                 </div>
                 <div class="-mb-5 m-auto lg:flex-none lg:-mt-10 h-24 lg:mb-0 lg:w-60 lg:h-auto">
-                        <NuxtImg class="size-full" src="/assets/img/home/invoice.webp" alt="پیش فاکتور آنلاین" />
+                        <NuxtImg class="h-full" src="/assets/img/home/invoice.webp" alt="پیش فاکتور آنلاین" />
                 </div>
             </div>
         </div>

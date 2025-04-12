@@ -20,7 +20,7 @@
                 <svg class="icon">
                     <use href="#call"/>
                 </svg>
-                <input class="input" type="tel" @keypress="onlyDigits" v-model="phone" placeholder="شماره تماس"/>
+                <input class="input text-right" type="tel" @keypress="onlyDigits" v-model="phone" placeholder="شماره تماس"/>
             </div>
             <div :class="{
                 'md:col-span-2 c-input-parent has-textarea relative': true,
