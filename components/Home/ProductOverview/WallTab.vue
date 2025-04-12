@@ -1,5 +1,9 @@
 <template>
-    <div>
+    <div :class="{
+        'relative': true,
+        'pb-10 md:pb-0': !isDescriptionVisible,
+        'pb-0': isDescriptionVisible,
+    }">
         <div class="flex flex-col gap-6 md:pt-4">
             <p class="text-sm text-primary-50 text-justify">
                 از انواع ساندویچ پانل که برای پوشش سقف سازه‌های مختلف مورد استفاده قرار می‌گیرد، پانل
@@ -22,7 +26,7 @@
                 می‌شود که شامل مواد عایق برای هسته مرکزی و ورق‌هایی مقاوم برای لایه‌های جانبی می‌شود.  
             </p>
 
-            <button v-show="!isDescriptionVisible" class="text-secondary-500 text-xs max-w-max flex items-center gap-2" type="button" aria-label="مشاهده بیشتر" @click="showMore">
+            <button v-show="!isDescriptionVisible" class="absolute bottom-0 right-0 text-secondary-500 text-xs max-w-max flex items-center gap-2 md:static" type="button" aria-label="مشاهده بیشتر" @click="showMore">
                 مشاهده بیشتر
                 <svg class="w-4	h-4">
                     <use href="#down" />
