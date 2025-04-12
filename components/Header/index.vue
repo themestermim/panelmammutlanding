@@ -2,7 +2,11 @@
     <header :class="{
         'sticky top-0 transition-all z-10 bg-primary-900': true,
     }">
-        <div class="container grid grid-cols-2 md:grid-cols-5 h-14 md:h-16 lg:h-20">
+        <div :class="{
+            'container grid grid-cols-2 md:grid-cols-5 transition-all': true,
+            'h-14 md:h-16 lg:h-20': !minimizeHeader,
+            'h-12 md:h-14 lg:h-16': minimizeHeader,
+        }">
             <!-- mobile menu & phone -->
             <div class="flex items-center gap-8 order-1 md:order-3 md:justify-end">
                 <button type="button" role="button" @click="layoutStore.toggleMenu" aria-label="منو" class="text-white cursor-pointer md:hidden">
@@ -32,7 +36,7 @@
         <!-- mobile navbar -->
         <Transition name="fade">
             <div v-if="isMenuOpen" :class="{
-                'fixed bottom-0 top-14 right-0 w-full bg-gray-50 p-4 md:hidden': true,
+                'fixed bottom-0 top-auto right-0 w-full bg-gray-50 p-4 md:hidden h-52': true,
             }">
                 <Nav />
             </div>
@@ -50,12 +54,45 @@ defineOptions({
 
 const layoutStore = useLayout();
 const isMenuOpen = computed(() => layoutStore.isMenuOpen);
+const minimizeHeader = ref(false);
+const ticking = ref(false);
+const SCROLL_THRESHOLD = 200;
+const BUFFER = 10;
+
+const handleScroll = () => {
+    const scrollY = window.scrollY;
+
+    // console.log(window.scrollY)
+
+    if (!minimizeHeader.value && scrollY > SCROLL_THRESHOLD + BUFFER) {
+        minimizeHeader.value = true;
+    } else if (minimizeHeader.value && scrollY < SCROLL_THRESHOLD - BUFFER) {
+        minimizeHeader.value = false;
+    }
+};
+
+const onScroll = () => {
+    if (!ticking.value) {
+        window.requestAnimationFrame(() => {
+            handleScroll();
+            ticking.value = false;
+        });
+        ticking.value = true;
+    }
+};
 
 onMounted(() => {
     window.addEventListener('resize', () => {
         layoutStore.closeMenu();
     })
+
+    handleScroll(); // بررسی اولیه
+    window.addEventListener('scroll', onScroll);
 })
+
+onUnmounted(() => {
+    window.removeEventListener('scroll', onScroll);
+});
 
 </script>
 
