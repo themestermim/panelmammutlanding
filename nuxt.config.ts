@@ -39,6 +39,9 @@ export default defineNuxtConfig({
     },
 
     runtimeConfig: {
+        public: {
+            apiBase: 'https://panelmammut.co/api',
+        },
         private: {
             gmailAppPassword: "hang hyog tlwe zhwx",
             gmailMailTo: "themestermim@gmail.com",

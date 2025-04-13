@@ -27,7 +27,7 @@
             </div>
             <div class="md:flex md:items-center lg:px-4">
                 <div class="relative pt-[62.25%] w-full">
-                    <video class="size-full absolute top-0 right-0" controls controlslist="nodownload" preload="metadata">
+                    <video class="size-full absolute top-0 right-0" poster="/assets/img/home/about-cover.gif" controls controlslist="nodownload" preload="metadata">
                         <source src="/assets/video/mammut_about.mp4" type="video/mp4">
                     </video>
                 </div>

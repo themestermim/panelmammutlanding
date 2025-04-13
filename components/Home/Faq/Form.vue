@@ -57,6 +57,7 @@ const phone = ref("");
 const description = ref("");
 const descriptionMax = ref(200);
 const isLoading = ref(false);
+const runtimeConfig = useRuntimeConfig();
 
 const sendEmail = async () => {
     if (!name.value || !phone.value || !description.value) {
@@ -70,13 +71,17 @@ const sendEmail = async () => {
     isLoading.value = true;
 
     try {
-        const res = await $fetch('/api/send-email', {
-            method: 'POST',
-            body: {
-                name: name.value,
-                phone: phone.value,
-                description: description.value,
+        const body = {
+            name: name.value,
+            phone: phone.value,
+            description: description.value,
+        };
+        const res = await $fetch(`${runtimeConfig.public.apiBase}/email.php`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
             },
+            body: JSON.stringify(body)
         })
 
         if (res.success) {
@@ -93,6 +98,7 @@ const sendEmail = async () => {
                 icon: "❌",
             });
         }
+
     } catch (err) {
         toast.error('ارسال پیام با مشکل مواجه شد', {
             limit: 1,
