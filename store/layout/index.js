@@ -11,6 +11,12 @@ export const useLayout = defineStore('Layout', {
         toggleDropDown() {
             this.isMenuDropdownOpen = !this.isMenuDropdownOpen;
         },
+        openDropDown() {
+            this.isMenuDropdownOpen = true;
+        },
+        closeDropDown() {
+            this.isMenuDropdownOpen = false;
+        },
         toggleMenu() {
             this.isMenuOpen = !this.isMenuOpen;
         },

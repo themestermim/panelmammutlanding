@@ -1,7 +1,7 @@
 <template>
     <nav class="flex flex-col gap-2 md:contents">
-        <div class="md:relative md:h-full md:px-2 lg:px-4">
-            <div @click="layoutStore.toggleDropDown" class="flex items-center justify-between text-primary-800 cursor-pointer py-1 md:py-0 md:text-white md:justify-start md:gap-2 md:h-full">
+        <div class="md:relative md:h-full md:px-2 lg:px-4" @mouseleave="closeDropdown">
+            <div @click="layoutStore.toggleDropDown" @mouseenter="openDropdown" class="flex items-center justify-between text-primary-800 cursor-pointer py-1 md:py-0 md:text-white md:justify-start md:gap-2 md:h-full">
                 <span class="text-xs md:text-sm font-semibold leading-6">محصولات</span>
                 <svg :class="{
                     'size-4 transition-all': true,
@@ -43,4 +43,16 @@ defineOptions({
 
 const layoutStore = useLayout();
 const isDropdownOpen = computed(() => layoutStore.isMenuDropdownOpen);
+
+const openDropdown = () => {
+    if(window.innerWidth >= 768) {
+        layoutStore.openDropDown();
+    }
+}
+
+const closeDropdown = () => {
+    if(window.innerWidth >= 768) {
+        layoutStore.closeDropDown();
+    }
+}
 </script>
