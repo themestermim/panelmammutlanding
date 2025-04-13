@@ -27,9 +27,11 @@
             </div>
             <div class="md:flex md:items-center lg:px-4">
                 <div class="relative pt-[62.25%] w-full">
-                    <video class="size-full absolute top-0 right-0" poster="/assets/img/home/about-cover.gif" controls controlslist="nodownload" preload="metadata">
-                        <source src="/assets/video/mammut_about.mp4" type="video/mp4">
-                    </video>
+                    <div class="size-full absolute top-0 right-0">
+                        <video ref="videoElement" poster="/assets/img/home/about-cover.gif" controls preload="metadata">
+                            <source src="/assets/video/mammut_about.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
             </div>
         </div>
@@ -37,7 +39,18 @@
 </template>
 
 <script setup>
+import Plyr from 'plyr';
+
 defineOptions({
     name: "HomeProductDetailsWithOrder",
 })
+
+const videoElement = ref(null);
+
+onMounted(() => {
+    const player = new Plyr(videoElement.value, {
+        controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen'],
+    });
+});
+
 </script>

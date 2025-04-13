@@ -28,9 +28,11 @@
 
                 <div class="px-4 md:pr-0 md:pl-8">
                     <div class="w-full relative pt-[62.25%]">
-                        <video class="absolute top-0 right-0 size-full" controls controlslist="nodownload" preload="metadata" poster="/assets/img/home/products-cover.gif">
-                            <source src="/assets/video/products.mp4" type="video/mp4">
-                        </video>
+                        <div class="absolute top-0 right-0 size-full">
+                            <video ref="videoElement" controls preload="metadata" poster="/assets/img/home/products-cover.gif">
+                                <source src="/assets/video/products.mp4" type="video/mp4">
+                            </video>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -40,6 +42,7 @@
 
 
 <script setup>
+import Plyr from 'plyr';
 import {useHome} from "~/store/home/index.js";
 import RoofShort from "~/components/Home/ProductOverview/Roof/Short.vue";
 import WallShort from "~/components/Home/ProductOverview/Wall/Short.vue";
@@ -51,4 +54,12 @@ defineOptions({
 const homeStore = useHome();
 const activeProductTab = computed(() => homeStore.activeProductTab);
 const productShowInfo = computed(() => homeStore.productShowInfo);
+
+const videoElement = ref(null);
+
+onMounted(() => {
+    const player = new Plyr(videoElement.value, {
+        controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen'],
+    });
+});
 </script>
