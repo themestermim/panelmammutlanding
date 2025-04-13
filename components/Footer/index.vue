@@ -42,7 +42,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/company/mammutconstruction/" target="_blank">
                             <svg class="size-5 opacity-50 hover:opacity-100 transition-opacity duration-300">
                                 <use href="#linkedin" />
                             </svg>

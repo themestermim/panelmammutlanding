@@ -28,7 +28,7 @@
 
                 <div class="px-4 md:pr-0 md:pl-8">
                     <div class="w-full relative pt-[62.25%]">
-                        <video class="absolute top-0 right-0 size-full" controls controlslist="nodownload" preload="metadata">
+                        <video class="absolute top-0 right-0 size-full" controls controlslist="nodownload" preload="metadata" poster="/assets/img/home/products-cover.gif">
                             <source src="/assets/video/products.mp4" type="video/mp4">
                         </video>
                     </div>
