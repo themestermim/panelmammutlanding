@@ -37,8 +37,8 @@
 
         <div class="hs-description mt-14 lg:mt-24 text-gray-400 text-sm font-normal text-justify sm:px-12">
             <p>
-                از انواع <NuxtLink to="/" class="underline underline-offset-4 cursor-pointer">ساندویچ
-                    پانل</NuxtLink> که برای پوشش سقف سازه‌های مختلف مورد استفاده قرار می‌گیرد،پانل سقفی
+                از انواع <a href="https://mammutco-panel.com/" target="_blank" class="underline underline-offset-4 cursor-pointer">ساندویچ
+                    پانل</a> که برای پوشش سقف سازه‌های مختلف مورد استفاده قرار می‌گیرد،پانل سقفی
                 بوده و به دلیل ساختار کامپوزیتی خود توانسته جایگزین مناسبی برای مصالح سنتی باشد.
                 ویژگی‌های این متریال و مزایای متعدد آن‌ها سبب شده تا با افزایش دوام ساختمان و عایق‌سازی
                 بنا، یک سقف با عملکردی چندگانه در اختیار افراد قرار گیرد.

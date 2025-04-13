@@ -12,14 +12,14 @@
             لحاظ نفوذپذیری از مزیت‌های لایه‌ای بودن این پنل‌ها می‌باشد.
         </p>
 
-        <button
+        <a href="https://mammutco-panel.com/sandwich-panel/roof/" target="_blank"
             class="absolute bottom-0 right-0 text-secondary-500 text-xs max-w-max flex items-center gap-2 md:static"
-            type="button" aria-label="مشاهده بیشتر" v-show="!productShowInfo" @click="homeStore.showMoreInfo">
+            type="button" aria-label="مشاهده بیشتر">
             مشاهده بیشتر
-            <svg class="w-4	h-4">
+            <svg class="w-4	h-4 rotate-90">
                 <use href="#down"/>
             </svg>
-        </button>
+        </a>
     </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
     <!--    lg:py-16-->
-    <div class="container c-padding">
+    <div class="container c-padding" id="product-overview">
         <h2 class="text-base font-bold lg:text-2xl">محصولات پانل ماموت</h2>
         <div class="mt-6">
             <ul class="flex items-center overflow-auto border-b border-primary-400 max-w-max mb-4 lg:mb-8 list-none gap-4 lg:gap-6 *:flex-none">
@@ -27,15 +27,12 @@
                 <WallShort v-show="activeProductTab === 'roof'" />
 
                 <div class="px-4 md:pr-0 md:pl-8">
-                    <div class="aspect-video">
-                        <video class="w-full h-full" controls>
-                            <source src="/assets/video/home/video_mammut.mp4" type="video/mp4">
+                    <div class="w-full relative pt-[62.25%]">
+                        <video class="absolute top-0 right-0 size-full" controls controlslist="nodownload" preload="metadata">
+                            <source src="/assets/video/products.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
-
-                <RoofLong v-show="activeProductTab === 'wall' && productShowInfo" />
-                <WallLong v-show="activeProductTab === 'roof' && productShowInfo" />
             </div>
         </div>
     </div>
@@ -45,9 +42,7 @@
 <script setup>
 import {useHome} from "~/store/home/index.js";
 import RoofShort from "~/components/Home/ProductOverview/Roof/Short.vue";
-import RoofLong from "~/components/Home/ProductOverview/Roof/Long.vue";
 import WallShort from "~/components/Home/ProductOverview/Wall/Short.vue";
-import WallLong from "~/components/Home/ProductOverview/Wall/Long.vue";
 
 defineOptions({
     name: "HomeProductOverview",

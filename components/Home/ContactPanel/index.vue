@@ -1,8 +1,7 @@
 <template>
-<!--    lg:mt-28 lg:mb-14-->
-    <div class="c-padding">
-        <div class="container lg:relative">
-            <div class="pt-6 px-4 bg-white rounded-[50px] overflow-hidden lg:flex flex-row lg:py-6 lg:items-center lg:overflow-visible">
+    <div class="c-padding" id="contact-us">
+        <div class="container lg:relative before:absolute before:content-[''] before:bg-white before:hidden lg:before:block before:h-24 xl:before:h-20 before:w-10/12 before:rounded-full before:top-1/2 before:right-1/2 before:-translate-y-1/2 before:translate-x-1/2 before:blur-2xl">
+            <div class="pt-6 px-4 bg-white rounded-[50px] overflow-hidden lg:flex flex-row lg:py-6 lg:items-center lg:overflow-visible lg:relative lg:z-[1]">
                 <div class="flex relative gap-4 justify-center lg:flex-none xl:ml-12 lg:ml-4">
                     <svg class="w-14 h-14 absolute right-0 lg:relative lg:h-16 lg:w-16">
                         <use href="#headphone"/>

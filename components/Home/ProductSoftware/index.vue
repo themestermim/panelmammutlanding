@@ -17,9 +17,9 @@
                     نرم افزار سه بعدی ما به کاربر این امکان را می دهد به راحتی سوله های خود را طراحی و شخصی سازی کند.این
                     ابزار با ارائه مدل های سه بعدی دقیق و امکاناتی بی نظیر بصورت انلاین در اختیار شما عزیزان است.
                 </p>
-                <button class="c-btn btn-secondary-fill btn-md relative z-1">
+                <a href="https://mammutco-panel.com/online-3d/" target="_blank" class="c-btn btn-secondary-fill btn-md relative z-1 inline-flex">
                     <span>شروع کن !</span>
-                </button>
+                </a>
             </div>
             <div>
                 <NuxtImg class="w-full h-auto" src="/assets/img/home/product-software.webp" alt="نرم افزار طراحی سوله" />

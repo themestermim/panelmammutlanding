@@ -56,11 +56,11 @@
 //     });
 // }
 //
-// export const scrollToElem = (id, margin) => {
-//     const element = document.getElementById(id);
-//     if (element) {
-//         const offset = margin;
-//         const top = element.getBoundingClientRect().top + window.scrollY - offset;
-//         window.scrollTo({ top, behavior: "smooth" });
-//     }
-// }
+export const scrollToElem = (id, margin) => {
+    const element = document.getElementById(id);
+    if (element) {
+        const offset = margin;
+        const top = element.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: "smooth" });
+    }
+}

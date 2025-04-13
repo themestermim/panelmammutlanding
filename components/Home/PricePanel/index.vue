@@ -25,9 +25,9 @@
                     </p>
                 </div>
                 <div class="text-center lg:flex-none xl:ml-9 lg:ml-0">
-                    <button class="py-2 px-6 rounded-3xl bg-primary-500 text-xs text-white">
+                    <a href="https://mammutco-panel.com/product-price/" title="پیش فاکتور آنلاین" target="_blank" class="py-2 px-6 rounded-3xl bg-primary-500 text-xs text-white">
                         پیش فاکتور آنلاین
-                    </button>
+                    </a>
                 </div>
                 <div class="-mb-5 m-auto lg:flex-none lg:-mt-10 h-24 lg:mb-0 lg:w-60 lg:h-auto">
                         <NuxtImg class="h-full" src="/assets/img/home/invoice.webp" alt="پیش فاکتور آنلاین" />

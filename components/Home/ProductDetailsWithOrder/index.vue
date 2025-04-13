@@ -1,5 +1,5 @@
 <template>
-    <div class="c-padding container">
+    <div class="c-padding container" id="about-us">
         <div class="relative grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 pb-14">
             <div class="md:order-2 flex flex-col gap-4 md:justify-between md:gap-2">
                 <div>
@@ -17,23 +17,18 @@
                     </p>
                 </div>
                 <div class="absolute right-0 bottom-0 flex gap-4 md:justify-end md:static lg:gap-6 xl:gap-8 w-full">
-                    <button class="c-btn btn-md btn-secondary-fill flex-1 md:flex-none">
-                        <span>
-                            خرید
-                            اقساطی
-                        </span>
-                    </button>
-                    <button class="c-btn btn-md btn-danger-fill flex-1 md:flex-none">
-                        <span>
-                            ثبت
-                            سفارش </span>
-                    </button>
+                    <a href="https://mammutco-panel.com/credit-shopping/" target="_blank" class="c-btn btn-md btn-secondary-fill flex-1 md:flex-none">
+                        <span> خرید اقساطی </span>
+                    </a>
+                    <a href="https://mammutco-panel.com/product-price/" target="_blank" class="c-btn btn-md btn-danger-fill flex-1 md:flex-none">
+                        <span> ثبت سفارش </span>
+                    </a>
                 </div>
             </div>
-            <div class="md:flex md:items-center">
-                <div class="aspect-video lg:px-4">
-                    <video class="size-full" controls>
-                        <source src="/assets/video/home/video_mammut.mp4" type="video/mp4">
+            <div class="md:flex md:items-center lg:px-4">
+                <div class="relative pt-[62.25%] w-full">
+                    <video class="size-full absolute top-0 right-0" controls controlslist="nodownload" preload="metadata">
+                        <source src="/assets/video/mammut_about.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>

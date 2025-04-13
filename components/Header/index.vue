@@ -58,31 +58,9 @@
             </div>
 
             <div class="max-h-48 overflow-auto">
-                <Nav/>
+                <Nav :close="closeSheet" />
             </div>
         </div>
-
-<!--        <HLTransitionRoot-->
-<!--            :show="isMenuOpen"-->
-<!--            as="template"-->
-<!--        >-->
-<!--            <HLDialog @close="layoutStore.closeMenu">-->
-<!--                <HLTransitionChild-->
-<!--                    enter="transition-all ease-in-out duration-300"-->
-<!--                    enter-from="translate-y-52"-->
-<!--                    enter-to="translate-y-0"-->
-<!--                    leave="transition-all ease-in-out duration-300"-->
-<!--                    leave-from="translate-y-0"-->
-<!--                    leave-to="translate-y-52"-->
-<!--                    as="div"-->
-<!--                    class="fixed bottom-0 top-auto right-0 w-full bg-gray-50 p-4 z-[5] md:hidden h-52 rounded-t-2xl overflow-auto transition-all ease-in-out"-->
-<!--                >-->
-<!--                    <HLDialogPanel>-->
-<!--                        <Nav/>-->
-<!--                    </HLDialogPanel>-->
-<!--                </HLTransitionChild>-->
-<!--            </HLDialog>-->
-<!--        </HLTransitionRoot>-->
     </header>
 </template>
 
@@ -182,7 +160,6 @@ const onTouchEnd = () => {
     }
 }
 
-// محاسبه style
 const sheetStyle = computed(() => {
     const y = isOpen.value ? translateY.value : 1000
     return {

@@ -17,29 +17,38 @@
                 'max-h-0 mt-0': !isDropdownOpen,
             }">
                 <li>
-                    <NuxtLink to="/"
+                    <button type="button" @click="handleScroll('product-overview')"
                         class="block text-primary-400 hover:text-primary-500 text-xs md:text-xs font-semibold cursor-pointer py-1 md:py-2 md:px-4 md:text-primary-200 md:hover:text-white md:transition-all">
-                        ساندویچ پانل سقفی </NuxtLink>
+                        ساندویچ پانل سقفی </button>
                 </li>
                 <li>
-                    <NuxtLink to="/"
+                    <button type="button" @click="handleScroll('product-overview')"
                         class="block text-primary-400 hover:text-primary-500 text-xs md:text-xs font-semibold cursor-pointer py-1 md:py-2 md:px-4 md:text-primary-200 md:hover:text-white md:transition-all">
-                        ساندویچ پانل دیواری </NuxtLink>
+                        ساندویچ پانل دیواری </button>
                 </li>
             </ul>
         </div>
-        <NuxtLink to="#" class="text-primary-800 py-1 md:py-0 text-xs md:text-sm font-semibold leading-6 md:text-white md:px-2 lg:px-4"> هزینه اعتباری </NuxtLink>
-        <NuxtLink to="#" class="text-primary-800 py-1 md:py-0 text-xs md:text-sm font-semibold leading-6 md:text-white md:px-2 lg:px-4"> بلاگ </NuxtLink>
-        <NuxtLink to="#" class="text-primary-800 py-1 md:py-0 text-xs md:text-sm font-semibold leading-6 md:text-white md:px-2 lg:px-4"> درباره ما </NuxtLink>
+        <button type="button" @click="handleScroll('faq')" class="text-right text-primary-800 py-1 md:py-0 text-xs md:text-sm font-semibold leading-6 md:text-white md:px-2 lg:px-4"> سوالات متداول </button>
+        <button type="button" @click="handleScroll('contact-us')" class="text-right text-primary-800 py-1 md:py-0 text-xs md:text-sm font-semibold leading-6 md:text-white md:px-2 lg:px-4"> تماس با ما </button>
+        <button type="button" @click="handleScroll('about-us')" class="text-right text-primary-800 py-1 md:py-0 text-xs md:text-sm font-semibold leading-6 md:text-white md:px-2 lg:px-4"> درباره ما </button>
     </nav>
 </template>
 
 <script setup>
 import { useLayout } from '~/store/layout';
+import {scrollToElem} from "~/helpers/common.js";
 
 defineOptions({
     name: "layoutsHeaderNav",
 });
+
+const props = defineProps({
+    close: {
+        type: Function,
+        required: false,
+        default: () => {},
+    }
+})
 
 const layoutStore = useLayout();
 const isDropdownOpen = computed(() => layoutStore.isMenuDropdownOpen);
@@ -54,5 +63,10 @@ const closeDropdown = () => {
     if(window.innerWidth >= 768) {
         layoutStore.closeDropDown();
     }
+}
+
+const handleScroll = (elem) => {
+    scrollToElem(elem, 64);
+    props.close();
 }
 </script>
