@@ -37,7 +37,7 @@
             <a href="tel:02145510" class="c-btn btn-danger-fill btn-md">
                 <span> تماس با ما </span>
             </a>
-            <button type="button" class="c-btn btn-secondary-fill btn-md disabled:opacity-50 disabled:pointer-events-none" @click="sendEmail" :disabled="isLoading">
+            <button type="button" class="c-btn btn-secondary-fill btn-md disabled:opacity-50 disabled:pointer-events-none relative z-1" @click="sendEmail" :disabled="isLoading">
                 <span> ارسال پیام </span>
             </button>
         </div>

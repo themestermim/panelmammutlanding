@@ -18,7 +18,7 @@
                 <!-- phone number -->
                 <a href="tel:02145510"
                    class="text-white cursor-pointer md:h-10 md:rounded-3xl md:bg-primary-50 md:px-4 md:flex md:items-center md:gap-2 md:text-primary-500 lg:gap-4 lg:px-6 lg:tracking-wider">
-                    <span class="hidden md:block text-sm font-semibold lg:text-base lg:font-bold">021-45510</span>
+                    <span class="hidden md:block text-sm font-semibold lg:text-base lg:font-normal">021-45510</span>
                     <svg class="size-5">
                         <use href="#svg-call"/>
                     </svg>

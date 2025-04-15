@@ -17,7 +17,7 @@
                     </p>
                 </div>
                 <div class="absolute right-0 bottom-0 flex gap-4 md:justify-end md:static lg:gap-6 xl:gap-8 w-full">
-                    <a href="https://mammutco-panel.com/credit-shopping/" target="_blank" class="c-btn btn-md btn-secondary-fill flex-1 md:flex-none">
+                    <a href="https://mammutco-panel.com/credit-shopping/" target="_blank" class="c-btn btn-md btn-secondary-fill flex-1 md:flex-none relative z-1">
                         <span> خرید اقساطی </span>
                     </a>
                     <a href="https://mammutco-panel.com/product-price/" target="_blank" class="c-btn btn-md btn-danger-fill flex-1 md:flex-none">
